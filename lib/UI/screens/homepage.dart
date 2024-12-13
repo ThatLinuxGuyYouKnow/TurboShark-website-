@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:turbo_shark_website/UI/sections/featureSection.dart';
 import 'package:turbo_shark_website/UI/sections/heroSection.dart';
 import 'package:turbo_shark_website/UI/widgets/appBars.dart';
 
@@ -22,6 +23,7 @@ class Homepage extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
+          FeatureSection()
         ]),
       ),
     );
