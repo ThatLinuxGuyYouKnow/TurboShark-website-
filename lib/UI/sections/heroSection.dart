@@ -13,7 +13,7 @@ class HeroSection extends StatelessWidget {
         child: Column(
           children: [
             Text('Turbo Shark',
-                style: GoogleFonts.russoOne(color: Colors.white, fontSize: 12))
+                style: GoogleFonts.russoOne(color: Colors.white, fontSize: 30))
           ],
         ),
       ),
