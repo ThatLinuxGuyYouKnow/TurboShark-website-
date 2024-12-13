@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class FeatureSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20.0),
+      padding: EdgeInsets.symmetric(horizontal: 100.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
