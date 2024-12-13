@@ -52,7 +52,7 @@ class HeroSection extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
               ),
-              SizedBox(height: 80),
+              SizedBox(height: 50),
               Padding(
                 padding: EdgeInsets.symmetric(
                     horizontal: 700), //TODO: Make responsive
