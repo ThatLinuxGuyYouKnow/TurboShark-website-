@@ -8,43 +8,96 @@ class FeatureSection extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-              height: 500,
-              child: Row(
-                children: [
-                  Container(
-                    child: Column(
-                      children: [
-                        CircleAvatar(
-                          radius: 35,
-                          backgroundColor: Colors.blue.shade300.withOpacity(.1),
-                          child: Icon(Icons.fast_forward),
-                        ),
-                        SizedBox(
-                          height: 30,
-                        ),
-                        Text(
-                          'Lightning Fast Downloads',
-                          style: GoogleFonts.ubuntu(
-                              fontSize: 20,
-                              color: Colors.blue,
-                              fontWeight: FontWeight.bold),
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        Text(
-                          'Accelerate your downloads with our advanced technology.',
-                          style: GoogleFonts.ubuntu(
-                              fontSize: 16,
-                              color: Colors.blue,
-                              fontWeight: FontWeight.w600),
-                        )
-                      ],
-                    ),
-                  )
-                ],
-              )),
+          Expanded(
+            child: Column(
+              children: [
+                CircleAvatar(
+                  radius: 35,
+                  backgroundColor: Colors.blue.withOpacity(.2),
+                  child: Icon(Icons.fast_forward),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Text(
+                  'Lightning Fast Downloads',
+                  style: GoogleFonts.ubuntu(
+                      fontSize: 20,
+                      color: Colors.blue,
+                      fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text(
+                  'Accelerate your downloads with our advanced technology.',
+                  style: GoogleFonts.ubuntu(
+                      fontSize: 16,
+                      color: Colors.blue,
+                      fontWeight: FontWeight.w600),
+                )
+              ],
+            ),
+          ),
+          Expanded(
+            child: Column(
+              children: [
+                CircleAvatar(
+                  radius: 35,
+                  backgroundColor: Colors.blue.shade300.withOpacity(.1),
+                  child: Icon(Icons.security),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Text(
+                  'Secure and Private',
+                  style: GoogleFonts.ubuntu(
+                      fontSize: 20,
+                      color: Colors.blue,
+                      fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  'Your downloads are protected with state-of-the-art encryption.',
+                  style: GoogleFonts.ubuntu(
+                      fontSize: 16,
+                      color: Colors.blue,
+                      fontWeight: FontWeight.w600),
+                )
+              ],
+            ),
+          ),
+          Expanded(
+            child: Column(
+              children: [
+                CircleAvatar(
+                  radius: 35,
+                  backgroundColor: Colors.blue.shade300.withOpacity(.1),
+                  child: Icon(Icons.schedule),
+                ),
+                SizedBox(
+                  height: 30,
+                ),
+                Text(
+                  'Schedule Downloads',
+                  style: GoogleFonts.ubuntu(
+                      fontSize: 20,
+                      color: Colors.blue,
+                      fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text(
+                  'Plan your downloads for any time that suits you.',
+                  style: GoogleFonts.ubuntu(
+                      fontSize: 16,
+                      color: Colors.blue,
+                      fontWeight: FontWeight.w600),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );

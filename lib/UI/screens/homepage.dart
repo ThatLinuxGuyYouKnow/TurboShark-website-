@@ -13,7 +13,7 @@ class Homepage extends StatelessWidget {
         child: Column(children: [
           HeroSection(),
           SizedBox(
-            height: 50,
+            height: 100,
           ),
           Text(
             'Features',
@@ -21,7 +21,7 @@ class Homepage extends StatelessWidget {
                 fontSize: 40, fontWeight: FontWeight.bold, color: Colors.blue),
           ),
           SizedBox(
-            height: 50,
+            height: 100,
           ),
           FeatureSection()
         ]),
