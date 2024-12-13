@@ -13,7 +13,7 @@ class FeatureSection extends StatelessWidget {
               children: [
                 CircleAvatar(
                   radius: 35,
-                  backgroundColor: Colors.blue.withOpacity(.2),
+                  backgroundColor: Colors.blue.shade200.withOpacity(.2),
                   child: Icon(Icons.fast_forward),
                 ),
                 SizedBox(

@@ -23,7 +23,15 @@ class Homepage extends StatelessWidget {
           SizedBox(
             height: 100,
           ),
-          FeatureSection()
+          FeatureSection(),
+          SizedBox(
+            height: 100,
+          ),
+          Text(
+            'Prcing Plans',
+            style: GoogleFonts.ubuntu(
+                fontSize: 40, fontWeight: FontWeight.bold, color: Colors.blue),
+          )
         ]),
       ),
     );
