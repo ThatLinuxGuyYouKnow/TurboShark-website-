@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HeroSection extends StatelessWidget {
   Widget build(BuildContext context) {
@@ -10,7 +11,10 @@ class HeroSection extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(vertical: 20),
         child: Column(
-          children: [Text('Turbo Shark')],
+          children: [
+            Text('Turbo Shark',
+                style: GoogleFonts.russoOne(color: Colors.white, fontSize: 12))
+          ],
         ),
       ),
     );
