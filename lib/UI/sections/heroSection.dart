@@ -54,7 +54,7 @@ class HeroSection extends StatelessWidget {
               SizedBox(height: 80),
               Padding(
                 padding: EdgeInsets.symmetric(
-                    horizontal: 500), //TODO: Make responsive
+                    horizontal: 700), //TODO: Make responsive
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
