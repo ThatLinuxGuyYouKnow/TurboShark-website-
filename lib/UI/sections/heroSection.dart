@@ -8,13 +8,14 @@ class HeroSection extends StatelessWidget {
     final double screenWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      height: 600,
+      height: 420,
       width: screenWidth,
       decoration: BoxDecoration(
-        color: Color(0xFF4285F4),
+        gradient: LinearGradient(
+            colors: [Colors.blue.shade300, Colors.blue.shade700]),
       ),
       child: Padding(
-        padding: EdgeInsets.only(top: 100),
+        padding: EdgeInsets.only(top: 90),
         child: Center(
           child: Column(
             children: [
@@ -22,28 +23,28 @@ class HeroSection extends StatelessWidget {
                 'Turbo Shark',
                 style: GoogleFonts.russoOne(
                   color: Colors.white,
-                  fontSize: 45,
+                  fontSize: 35,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 3,
                 ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 10),
               Text(
                 'Download FASTER than ever!',
                 style: GoogleFonts.ubuntu(
-                  fontSize: 40,
-                  letterSpacing: 2,
+                  fontSize: 28,
+                  letterSpacing: 1.5,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 30),
+              SizedBox(height: 10),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 child: Text(
                   'The most powerful* and user-friendly download manager for all your needs. And it\'s completely free!',
                   style: GoogleFonts.ubuntu(
-                    fontSize: 25,
+                    fontSize: 22,
                     letterSpacing: 0,
                     color: Colors.white,
                     fontWeight: FontWeight.w600,

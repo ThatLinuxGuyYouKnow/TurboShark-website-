@@ -7,7 +7,10 @@ class Homepage extends StatelessWidget {
     return Scaffold(
       appBar: CustomAppBar(),
       body: SingleChildScrollView(
-        child: Column(children: [HeroSection()]),
+        child: Column(children: [
+          HeroSection(),
+          Container(height: 800, color: Colors.yellow)
+        ]),
       ),
     );
   }
