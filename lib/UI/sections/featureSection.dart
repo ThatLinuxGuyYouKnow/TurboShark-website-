@@ -27,7 +27,7 @@ class FeatureSection extends StatelessWidget {
                   'Lightning Fast Downloads',
                   style: GoogleFonts.ubuntu(
                       fontSize: screenWidth > 900 ? 20 : 16,
-                      color: Colors.black,
+                      color: Colors.blue,
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
@@ -38,7 +38,7 @@ class FeatureSection extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: GoogleFonts.ubuntu(
                     fontSize: screenWidth > 900 ? 16 : 12,
-                    color: Colors.black,
+                    color: Colors.blue,
                     fontWeight:
                         screenWidth > 900 ? FontWeight.w600 : FontWeight.w400,
                   ),
@@ -61,7 +61,7 @@ class FeatureSection extends StatelessWidget {
                   'Secure and Private',
                   style: GoogleFonts.ubuntu(
                       fontSize: screenWidth > 900 ? 20 : 16,
-                      color: Colors.black,
+                      color: Colors.blue,
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
@@ -72,7 +72,7 @@ class FeatureSection extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: GoogleFonts.ubuntu(
                     fontSize: screenWidth > 900 ? 16 : 12,
-                    color: Colors.black,
+                    color: Colors.blue,
                     fontWeight:
                         screenWidth > 900 ? FontWeight.w500 : FontWeight.w300,
                   ),
@@ -95,7 +95,7 @@ class FeatureSection extends StatelessWidget {
                   'Bandwidth Friendly',
                   style: GoogleFonts.ubuntu(
                       fontSize: screenWidth > 900 ? 20 : 16,
-                      color: Colors.black,
+                      color: Colors.blue,
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
@@ -106,7 +106,7 @@ class FeatureSection extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: GoogleFonts.ubuntu(
                     fontSize: screenWidth > 900 ? 16 : 12,
-                    color: Colors.black,
+                    color: Colors.blue,
                     fontWeight:
                         screenWidth > 900 ? FontWeight.w600 : FontWeight.w400,
                   ),
