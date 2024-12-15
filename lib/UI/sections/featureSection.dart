@@ -18,7 +18,10 @@ class FeatureSection extends StatelessWidget {
                 CircleAvatar(
                   radius: 35,
                   backgroundColor: Colors.blue.shade200.withOpacity(.2),
-                  child: const Icon(Icons.fast_forward),
+                  child: const Icon(
+                    Icons.fast_forward,
+                    color: Colors.blue,
+                  ),
                 ),
                 SizedBox(
                   height: 30,
@@ -89,7 +92,10 @@ class FeatureSection extends StatelessWidget {
                 CircleAvatar(
                   radius: 35,
                   backgroundColor: Colors.blue.shade300.withOpacity(.1),
-                  child: Icon(Icons.schedule),
+                  child: Icon(
+                    Icons.schedule,
+                    color: Colors.blue,
+                  ),
                 ),
                 SizedBox(
                   height: 30,
