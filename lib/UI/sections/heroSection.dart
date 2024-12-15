@@ -16,6 +16,9 @@ class HeroSection extends StatelessWidget {
       ),
       child: Column(
         children: [
+          SizedBox(
+            height: 160,
+          ),
           Text(
             'Turbo Shark',
             style: GoogleFonts.russoOne(
