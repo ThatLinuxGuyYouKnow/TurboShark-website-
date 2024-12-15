@@ -15,7 +15,7 @@ class HeroSection extends StatelessWidget {
             colors: [Colors.blue.shade300, Colors.blue.shade700]),
       ),
       child: Padding(
-        padding: EdgeInsets.only(top: 90),
+        padding: EdgeInsets.only(top: 100),
         child: Center(
           child: Column(
             children: [
@@ -38,11 +38,11 @@ class HeroSection extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 10),
+              SizedBox(height: 15),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 child: Text(
-                  'The most powerful* and user-friendly download manager for all your needs. And it\'s completely free!',
+                  'Swim circles around slow downloads. The fastest download experience*, completely free.',
                   style: GoogleFonts.ubuntu(
                     fontSize: 22,
                     letterSpacing: 0,

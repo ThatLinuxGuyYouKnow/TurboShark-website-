@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class FeatureSection extends StatelessWidget {
   Widget build(BuildContext context) {
+    final double screenWidth = MediaQuery.of(context).size.width;
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 150.0),
+      padding: EdgeInsets.symmetric(horizontal: screenWidth > 900 ? 80.0 : 10),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: screenWidth > 900
+            ? MainAxisAlignment.spaceBetween
+            : MainAxisAlignment.center,
         children: [
           Expanded(
             child: Column(
@@ -14,27 +18,30 @@ class FeatureSection extends StatelessWidget {
                 CircleAvatar(
                   radius: 35,
                   backgroundColor: Colors.blue.shade200.withOpacity(.2),
-                  child: Icon(Icons.fast_forward),
+                  child: const Icon(Icons.fast_forward),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 15,
                 ),
                 Text(
                   'Lightning Fast Downloads',
                   style: GoogleFonts.ubuntu(
-                      fontSize: 20,
-                      color: Colors.blue,
+                      fontSize: screenWidth > 900 ? 20 : 16,
+                      color: Colors.black,
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Text(
                   'Accelerate your downloads with our advanced technology.',
+                  textAlign: TextAlign.center,
                   style: GoogleFonts.ubuntu(
-                      fontSize: 16,
-                      color: Colors.blue,
-                      fontWeight: FontWeight.w600),
+                    fontSize: screenWidth > 900 ? 16 : 12,
+                    color: Colors.black,
+                    fontWeight:
+                        screenWidth > 900 ? FontWeight.w600 : FontWeight.w400,
+                  ),
                 )
               ],
             ),
@@ -53,16 +60,22 @@ class FeatureSection extends StatelessWidget {
                 Text(
                   'Secure and Private',
                   style: GoogleFonts.ubuntu(
-                      fontSize: 20,
-                      color: Colors.blue,
+                      fontSize: screenWidth > 900 ? 20 : 16,
+                      color: Colors.black,
                       fontWeight: FontWeight.bold),
                 ),
+                SizedBox(
+                  height: 10,
+                ),
                 Text(
-                  'Your downloads are protected with state-of-the-art encryption.',
+                  'Your data stays on your device, no servers anywhere logging your activity.',
+                  textAlign: TextAlign.center,
                   style: GoogleFonts.ubuntu(
-                      fontSize: 16,
-                      color: Colors.blue,
-                      fontWeight: FontWeight.w600),
+                    fontSize: screenWidth > 900 ? 16 : 12,
+                    color: Colors.black,
+                    fontWeight:
+                        screenWidth > 900 ? FontWeight.w500 : FontWeight.w300,
+                  ),
                 )
               ],
             ),
@@ -79,21 +92,24 @@ class FeatureSection extends StatelessWidget {
                   height: 30,
                 ),
                 Text(
-                  'Schedule Downloads',
+                  'Bandwidth Friendly',
                   style: GoogleFonts.ubuntu(
-                      fontSize: 20,
-                      color: Colors.blue,
+                      fontSize: screenWidth > 900 ? 20 : 16,
+                      color: Colors.black,
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Text(
-                  'Plan your downloads for any time that suits you.',
+                  'Downloads use your bandwidth efficiently to get the job done, without hogging resources.',
+                  textAlign: TextAlign.center,
                   style: GoogleFonts.ubuntu(
-                      fontSize: 16,
-                      color: Colors.blue,
-                      fontWeight: FontWeight.w600),
+                    fontSize: screenWidth > 900 ? 16 : 12,
+                    color: Colors.black,
+                    fontWeight:
+                        screenWidth > 900 ? FontWeight.w600 : FontWeight.w400,
+                  ),
                 )
               ],
             ),

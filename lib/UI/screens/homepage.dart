@@ -18,7 +18,7 @@ class Homepage extends StatelessWidget {
           Text(
             'Features',
             style: GoogleFonts.ubuntu(
-                fontSize: 40, fontWeight: FontWeight.bold, color: Colors.blue),
+                fontSize: 40, fontWeight: FontWeight.bold, color: Colors.black),
           ),
           SizedBox(
             height: 100,
@@ -30,7 +30,7 @@ class Homepage extends StatelessWidget {
           Text(
             'Prcing Plans',
             style: GoogleFonts.ubuntu(
-                fontSize: 40, fontWeight: FontWeight.bold, color: Colors.blue),
+                fontSize: 40, fontWeight: FontWeight.bold, color: Colors.black),
           )
         ]),
       ),
