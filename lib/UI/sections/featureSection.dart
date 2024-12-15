@@ -21,7 +21,7 @@ class FeatureSection extends StatelessWidget {
                   child: const Icon(Icons.fast_forward),
                 ),
                 SizedBox(
-                  height: 15,
+                  height: 30,
                 ),
                 Text(
                   'Lightning Fast Downloads',
@@ -52,7 +52,10 @@ class FeatureSection extends StatelessWidget {
                 CircleAvatar(
                   radius: 35,
                   backgroundColor: Colors.blue.shade300.withOpacity(.1),
-                  child: Icon(Icons.security),
+                  child: Icon(
+                    Icons.security,
+                    color: Colors.blue,
+                  ),
                 ),
                 SizedBox(
                   height: 30,
@@ -65,7 +68,7 @@ class FeatureSection extends StatelessWidget {
                       fontWeight: FontWeight.bold),
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 20,
                 ),
                 Text(
                   'Your data stays on your device, no servers anywhere logging your activity.',
