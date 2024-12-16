@@ -10,7 +10,7 @@ class HeroSection extends StatelessWidget {
     final bool smallScreenHeight = MediaQuery.of(context).size.height < 900;
 
     return Container(
-      height: smallScreen ? 400 : 600,
+      height: smallScreen ? 200 : 600,
       width: screenWidth,
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -23,7 +23,7 @@ class HeroSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-              height: smallScreenHeight ? 45 : 20,
+              height: smallScreenHeight ? 60 : 20,
             ),
             Text(
               'Turbo Shark',
