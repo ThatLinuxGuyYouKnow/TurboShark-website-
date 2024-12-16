@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:turbo_shark_website/UI/sections/faqSection.dart';
 import 'package:turbo_shark_website/UI/sections/featureSection.dart';
+import 'package:turbo_shark_website/UI/sections/footerSection.dart';
 import 'package:turbo_shark_website/UI/sections/heroSection.dart';
 import 'package:turbo_shark_website/UI/sections/pricingSection.dart';
 import 'package:turbo_shark_website/UI/widgets/appBars.dart';
@@ -45,6 +46,10 @@ class Homepage extends StatelessWidget {
             height: 50,
           ),
           FAQSection(),
+          SizedBox(
+            height: 50,
+          ),
+          FooterSection()
         ]),
       ),
     );
