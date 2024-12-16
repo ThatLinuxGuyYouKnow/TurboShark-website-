@@ -26,7 +26,7 @@ class Homepage extends StatelessWidget {
           ),
           FeatureSection(),
           SizedBox(
-            height: 100,
+            height: 150,
           ),
           PricingSection()
         ]),
