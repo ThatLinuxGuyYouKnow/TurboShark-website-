@@ -38,8 +38,8 @@ class FeatureSection extends StatelessWidget {
       ),
       _buildFeatureColumn(
         icon: Icons.security,
-        iconColor: Colors.green,
-        backgroundColor: Colors.green.shade200.withOpacity(0.2),
+        iconColor: Colors.blue,
+        backgroundColor: Colors.blue.shade200.withOpacity(0.2),
         title: 'Secure and Private',
         description:
             'Your data stays on your device, no servers anywhere logging your activity.',
@@ -47,8 +47,8 @@ class FeatureSection extends StatelessWidget {
       ),
       _buildFeatureColumn(
         icon: Icons.schedule,
-        iconColor: Colors.purple,
-        backgroundColor: Colors.purple.shade200.withOpacity(0.2),
+        iconColor: Colors.blue,
+        backgroundColor: Colors.blue.shade200.withOpacity(0.2),
         title: 'Bandwidth Friendly',
         description:
             'Downloads use your bandwidth efficiently to get the job done, without hogging resources.',
@@ -90,8 +90,8 @@ class FeatureSection extends StatelessWidget {
               title,
               textAlign: TextAlign.center,
               style: GoogleFonts.ubuntu(
-                fontSize: isWideScreen ? 20 : 16,
-                color: Colors.black87,
+                fontSize: isWideScreen ? 22 : 18,
+                color: Colors.blue,
                 fontWeight: FontWeight.bold,
               ),
             ),
