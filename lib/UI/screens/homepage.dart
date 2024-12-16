@@ -12,9 +12,10 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool isSmallScreen = MediaQuery.of(context).size.width < 600;
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: CustomAppBar(),
+      appBar: isSmallScreen ? const MobileScreenAppBar() : const CustomAppBar(),
       body: SingleChildScrollView(
         child: Column(children: [
           HeroSection(),
@@ -34,7 +35,7 @@ class Homepage extends StatelessWidget {
             height: 150,
           ),
           const PricingSection(),
-          SizedBox(
+          const SizedBox(
             height: 100,
           ),
           Text(
@@ -42,14 +43,14 @@ class Homepage extends StatelessWidget {
             style: GoogleFonts.ubuntu(
                 fontSize: 40, fontWeight: FontWeight.bold, color: Colors.blue),
           ),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
           FAQSection(),
-          SizedBox(
+          const SizedBox(
             height: 50,
           ),
-          FooterSection()
+          const FooterSection()
         ]),
       ),
     );
