@@ -44,7 +44,7 @@ class FAQSection extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
           color: Colors.white,
-          boxShadow: [BoxShadow(color: Colors.blue.withOpacity(.1))]),
+          boxShadow: [BoxShadow(color: Colors.blue.withOpacity(.3))]),
       child: Padding(
         padding: EdgeInsets.all(16.0),
         child: Column(

@@ -11,19 +11,20 @@ class FooterSection extends StatelessWidget {
       height: 100,
       color: Colors.blue.shade300,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 20),
+        padding: EdgeInsets.symmetric(
+            horizontal: isMobileScreen ? 20 : 80, vertical: 20),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Row(
               children: [
-                SizedBox(width: isMobileScreen ? 16 : 5),
+                SizedBox(width: isMobileScreen ? 5 : 15),
                 Text(
                   'Turbo Shark',
                   style: GoogleFonts.russoOne(
                     color: Colors.white,
-                    fontSize: 24,
+                    fontSize: isMobileScreen ? 20 : 24,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

@@ -24,8 +24,8 @@ class Homepage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(children: [
           HeroSection(),
-          const SizedBox(
-            height: 100,
+          SizedBox(
+            height: isSmallHeight ? 60 : 100,
           ),
           Text(
             'Features',
@@ -34,19 +34,19 @@ class Homepage extends StatelessWidget {
                 fontWeight: isSmallScreen ? FontWeight.w800 : FontWeight.bold,
                 color: Colors.blue),
           ),
-          const SizedBox(
-            height: 100,
+          SizedBox(
+            height: isSmallHeight ? 60 : 100,
           ),
           FeatureSection(),
-          const SizedBox(
-            height: 150,
+          SizedBox(
+            height: isSmallHeight ? 100 : 150,
           ),
           PricingSection(
             isSmallScreen: isSmallScreen,
             smallScreenHeight: isSmallHeight,
           ),
-          const SizedBox(
-            height: 100,
+          SizedBox(
+            height: isSmallHeight ? 60 : 100,
           ),
           Text(
             'Frequently Asked Questions',
