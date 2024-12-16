@@ -106,3 +106,89 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => const Size.fromHeight(100);
 }
+
+class MobileScreenAppBar extends StatelessWidget
+    implements PreferredSizeWidget {
+  const MobileScreenAppBar({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      scrolledUnderElevation: 0,
+      elevation: 0,
+      toolbarHeight: 100,
+      backgroundColor: Colors.white,
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Row(
+            children: [
+              const Image(
+                height: 90,
+                width: 90,
+                image: AssetImage('assets/logo.png'),
+              ),
+              const SizedBox(width: 5),
+              Text(
+                'Turbo Shark',
+                style: GoogleFonts.russoOne(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontSize: 25,
+                  height: 60,
+                ),
+              ),
+            ],
+          ),
+          PopupMenuButton<String>(
+            icon: const Icon(Icons.menu, color: Colors.black),
+            onSelected: (value) {
+              debugPrint('Selected: $value');
+            },
+            itemBuilder: (BuildContext context) {
+              return [
+                PopupMenuItem(
+                  value: 'Features',
+                  child: Text(
+                    'Features',
+                    style: GoogleFonts.ubuntu(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blue,
+                    ),
+                  ),
+                ),
+                PopupMenuItem(
+                  value: 'Contribute',
+                  child: Text(
+                    'Contribute',
+                    style: GoogleFonts.ubuntu(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blue,
+                    ),
+                  ),
+                ),
+                PopupMenuItem(
+                  value: 'FAQ',
+                  child: Text(
+                    'FAQ',
+                    style: GoogleFonts.ubuntu(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blue,
+                    ),
+                  ),
+                ),
+              ];
+            },
+          ),
+        ],
+      ),
+    );
+  }
+
+  @override
+  Size get preferredSize => const Size.fromHeight(100);
+}
