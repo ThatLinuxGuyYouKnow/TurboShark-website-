@@ -23,7 +23,7 @@ class HeroSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-              height: 20,
+              height: smallScreenHeight ? 45 : 20,
             ),
             Text(
               'Turbo Shark',
