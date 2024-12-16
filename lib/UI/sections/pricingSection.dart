@@ -97,7 +97,7 @@ class PricingSection extends StatelessWidget {
     return Expanded(
       child: Container(
         height: 480,
-        width: isSmallScreen ? 320 : 200,
+        width: isSmallScreen ? 300 : 200,
         margin: const EdgeInsets.symmetric(vertical: 10),
         decoration: BoxDecoration(
           color: Colors.white,

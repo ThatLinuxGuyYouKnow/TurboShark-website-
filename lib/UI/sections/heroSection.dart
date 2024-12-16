@@ -22,6 +22,9 @@ class HeroSection extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            SizedBox(
+              height: 20,
+            ),
             Text(
               'Turbo Shark',
               style: GoogleFonts.russoOne(
@@ -77,12 +80,12 @@ class HeroSection extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         HeroButtons(
-                          icon: Icon(Icons.download, color: Colors.white),
+                          icon: Icon(Icons.download, color: Colors.blue),
                           buttonText: 'Download',
                         ),
                         SizedBox(width: 20),
                         HeroButtons(
-                          icon: Icon(Icons.read_more, color: Colors.white),
+                          icon: Icon(Icons.read_more, color: Colors.blue),
                           buttonText: 'Learn More',
                         ),
                       ],
