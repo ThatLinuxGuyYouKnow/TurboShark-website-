@@ -1,8 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const CustomAppBar({super.key});
+
   @override
   Widget build(BuildContext context) {
     return AppBar(
@@ -18,12 +19,12 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image(
+              const Image(
                 height: 90,
                 width: 90,
                 image: AssetImage('logo.png'),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 30,
               ),
               Text(
@@ -49,7 +50,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   color: Colors.blue,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
               Text(
@@ -60,7 +61,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   color: Colors.blue,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
               Text(
@@ -71,7 +72,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   color: Colors.blue,
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 30,
               ),
               GestureDetector(
@@ -79,7 +80,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                   height: 50,
                   width: 180,
                   decoration: BoxDecoration(
-                    color: Color(0xFF4285F4),
+                    color: const Color(0xFF4285F4),
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
@@ -102,5 +103,5 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => Size.fromHeight(100);
+  Size get preferredSize => const Size.fromHeight(100);
 }

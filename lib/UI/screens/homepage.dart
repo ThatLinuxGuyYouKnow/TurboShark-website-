@@ -6,6 +6,9 @@ import 'package:turbo_shark_website/UI/sections/pricingSection.dart';
 import 'package:turbo_shark_website/UI/widgets/appBars.dart';
 
 class Homepage extends StatelessWidget {
+  const Homepage({super.key});
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
@@ -13,7 +16,7 @@ class Homepage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(children: [
           HeroSection(),
-          SizedBox(
+          const SizedBox(
             height: 100,
           ),
           Text(
@@ -21,14 +24,14 @@ class Homepage extends StatelessWidget {
             style: GoogleFonts.ubuntu(
                 fontSize: 40, fontWeight: FontWeight.bold, color: Colors.blue),
           ),
-          SizedBox(
+          const SizedBox(
             height: 100,
           ),
           FeatureSection(),
-          SizedBox(
+          const SizedBox(
             height: 150,
           ),
-          PricingSection()
+          const PricingSection()
         ]),
       ),
     );

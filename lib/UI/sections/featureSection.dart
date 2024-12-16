@@ -85,7 +85,7 @@ class FeatureSection extends StatelessWidget {
                 size: 35,
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text(
               title,
               textAlign: TextAlign.center,
@@ -95,7 +95,7 @@ class FeatureSection extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Text(
               description,
               textAlign: TextAlign.center,

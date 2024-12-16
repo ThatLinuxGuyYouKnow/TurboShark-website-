@@ -16,7 +16,7 @@ class HeroSection extends StatelessWidget {
       ),
       child: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 160,
           ),
           Text(
@@ -28,7 +28,7 @@ class HeroSection extends StatelessWidget {
               letterSpacing: 3,
             ),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Text(
             'Download FASTER than ever!',
             style: GoogleFonts.ubuntu(
@@ -38,9 +38,9 @@ class HeroSection extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(height: 15),
+          const SizedBox(height: 15),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 30),
+            padding: const EdgeInsets.symmetric(horizontal: 30),
             child: Text(
               'Swim circles around slow downloads. The fastest download experience*, completely free.',
               style: GoogleFonts.ubuntu(
@@ -52,21 +52,21 @@ class HeroSection extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
           ),
-          SizedBox(height: 50),
+          const SizedBox(height: 50),
           Padding(
-            padding:
-                EdgeInsets.symmetric(horizontal: 700), //TODO: Make responsive
+            padding: const EdgeInsets.symmetric(
+                horizontal: 700), //TODO: Make responsive
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 HeroButtons(
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.download,
                     ),
                     buttonText: 'Download'),
                 HeroButtons(
                   buttonText: 'Learn More',
-                  icon: Icon(Icons.read_more),
+                  icon: const Icon(Icons.read_more),
                 )
               ],
             ),

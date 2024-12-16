@@ -4,10 +4,11 @@ import 'package:google_fonts/google_fonts.dart';
 class HeroButtons extends StatelessWidget {
   final String buttonText;
   final Widget icon;
-  HeroButtons(
+  const HeroButtons(
       {super.key,
       required String this.buttonText,
       this.icon = const SizedBox.shrink()});
+  @override
   Widget build(BuildContext context) {
     return GestureDetector(
       child: Container(

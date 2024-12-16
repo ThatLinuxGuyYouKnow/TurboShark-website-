@@ -2,10 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PricingSection extends StatelessWidget {
+  const PricingSection({super.key});
+
   @override
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
-    final double screenHeight = MediaQuery.of(context).size.height;
 
     return Container(
       width: screenWidth,
@@ -25,7 +26,7 @@ class PricingSection extends StatelessWidget {
                 color: Colors.blue,
               ),
             ),
-            SizedBox(height: 60),
+            const SizedBox(height: 60),
             LayoutBuilder(
               builder: (context, constraints) {
                 return screenWidth > 900
@@ -96,7 +97,7 @@ class PricingSection extends StatelessWidget {
       child: Container(
         height: 500,
         width: 100,
-        margin: EdgeInsets.symmetric(vertical: 10),
+        margin: const EdgeInsets.symmetric(vertical: 10),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(20),
@@ -109,7 +110,7 @@ class PricingSection extends StatelessWidget {
               color: Colors.grey.shade200,
               spreadRadius: 1,
               blurRadius: 10,
-              offset: Offset(0, 5),
+              offset: const Offset(0, 5),
             ),
           ],
         ),
@@ -126,7 +127,7 @@ class PricingSection extends StatelessWidget {
                   color: accentColor,
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               RichText(
                 text: TextSpan(
                   children: [
@@ -148,7 +149,7 @@ class PricingSection extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               ...benefits.map((benefit) => Padding(
                     padding: const EdgeInsets.symmetric(vertical: 8.0),
                     child: Row(
@@ -159,7 +160,7 @@ class PricingSection extends StatelessWidget {
                           color: accentColor,
                           size: 20,
                         ),
-                        SizedBox(width: 10),
+                        const SizedBox(width: 10),
                         Flexible(
                           child: Text(
                             benefit,
@@ -174,12 +175,13 @@ class PricingSection extends StatelessWidget {
                       ],
                     ),
                   )),
-              SizedBox(height: 30),
+              const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
                   backgroundColor: isRecommended ? accentColor : Colors.grey,
-                  padding: EdgeInsets.symmetric(horizontal: 40, vertical: 15),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10),
                   ),
