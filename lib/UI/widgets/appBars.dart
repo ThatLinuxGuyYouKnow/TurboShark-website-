@@ -6,6 +6,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool isMobileScreen = MediaQuery.of(context).size.width < 600;
     return AppBar(
       scrolledUnderElevation: 0,
       elevation: 0,
@@ -24,8 +25,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
                 width: 90,
                 image: AssetImage('logo.png'),
               ),
-              const SizedBox(
-                width: 30,
+              SizedBox(
+                width: isMobileScreen ? 30 : 5,
               ),
               Text(
                 'Turbo Shark',

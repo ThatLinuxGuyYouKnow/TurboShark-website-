@@ -6,6 +6,7 @@ class FooterSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final bool isMobileScreen = MediaQuery.of(context).size.width < 600;
     return Container(
       height: 100,
       color: Colors.blue.shade300,
@@ -22,7 +23,7 @@ class FooterSection extends StatelessWidget {
                   width: 80,
                   image: AssetImage('logo.png'),
                 ),
-                const SizedBox(width: 16),
+                SizedBox(width: isMobileScreen ? 16 : 2),
                 Text(
                   'Turbo Shark',
                   style: GoogleFonts.russoOne(
