@@ -15,7 +15,11 @@ class Homepage extends StatelessWidget {
     final bool isSmallScreen = MediaQuery.of(context).size.width < 600;
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: isSmallScreen ? const MobileScreenAppBar() : const CustomAppBar(),
+      appBar: isSmallScreen
+          ? MobileScreenAppBar(
+              isSmallScreen: isSmallScreen,
+            )
+          : const CustomAppBar(),
       body: SingleChildScrollView(
         child: Column(children: [
           HeroSection(),
@@ -25,7 +29,9 @@ class Homepage extends StatelessWidget {
           Text(
             'Features',
             style: GoogleFonts.ubuntu(
-                fontSize: 40, fontWeight: FontWeight.bold, color: Colors.blue),
+                fontSize: isSmallScreen ? 30 : 40,
+                fontWeight: isSmallScreen ? FontWeight.w800 : FontWeight.bold,
+                color: Colors.blue),
           ),
           const SizedBox(
             height: 100,
@@ -41,7 +47,9 @@ class Homepage extends StatelessWidget {
           Text(
             'Frequently Asked Questions',
             style: GoogleFonts.ubuntu(
-                fontSize: 40, fontWeight: FontWeight.bold, color: Colors.blue),
+                fontSize: isSmallScreen ? 30 : 40,
+                fontWeight: isSmallScreen ? FontWeight.w800 : FontWeight.bold,
+                color: Colors.blue),
           ),
           const SizedBox(
             height: 50,

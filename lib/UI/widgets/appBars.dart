@@ -109,7 +109,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
 
 class MobileScreenAppBar extends StatelessWidget
     implements PreferredSizeWidget {
-  const MobileScreenAppBar({super.key});
+  final bool isSmallScreen;
+  const MobileScreenAppBar({super.key, required this.isSmallScreen});
 
   @override
   Widget build(BuildContext context) {
