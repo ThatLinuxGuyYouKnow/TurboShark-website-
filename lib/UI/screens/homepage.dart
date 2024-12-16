@@ -13,6 +13,7 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final bool isSmallScreen = MediaQuery.of(context).size.width < 600;
+    final isSmallHeight = MediaQuery.of(context).size.height < 900;
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: isSmallScreen
@@ -40,7 +41,10 @@ class Homepage extends StatelessWidget {
           const SizedBox(
             height: 150,
           ),
-          const PricingSection(),
+          PricingSection(
+            isSmallScreen: isSmallScreen,
+            smallScreenHeight: isSmallHeight,
+          ),
           const SizedBox(
             height: 100,
           ),

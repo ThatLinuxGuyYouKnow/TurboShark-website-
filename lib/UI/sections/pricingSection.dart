@@ -2,12 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PricingSection extends StatelessWidget {
-  const PricingSection({super.key});
+  final bool isSmallScreen;
+  final bool smallScreenHeight;
+  const PricingSection(
+      {super.key,
+      required this.isSmallScreen,
+      required this.smallScreenHeight});
 
   @override
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
-
+    final bool isSmallHeight = MediaQuery.of(context).size.height < 900;
     return Container(
       width: screenWidth,
       color: const Color.fromARGB(255, 182, 219, 248).withOpacity(0.1),
@@ -91,8 +96,8 @@ class PricingSection extends StatelessWidget {
   }) {
     return Expanded(
       child: Container(
-        height: 480,
-        width: 200,
+        height: smallScreenHeight ? 520 : 480,
+        width: isSmallScreen ? 400 : 200,
         margin: const EdgeInsets.symmetric(vertical: 10),
         decoration: BoxDecoration(
           color: Colors.white,
