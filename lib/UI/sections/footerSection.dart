@@ -21,7 +21,7 @@ class FooterSection extends StatelessWidget {
                 const Image(
                   height: 80,
                   width: 80,
-                  image: AssetImage('logo.png'),
+                  image: AssetImage('assets/logo.png'),
                 ),
                 SizedBox(width: isMobileScreen ? 16 : 2),
                 Text(

@@ -23,7 +23,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
               const Image(
                 height: 90,
                 width: 90,
-                image: AssetImage('logo.png'),
+                image: AssetImage('assets/logo.png'),
               ),
               SizedBox(
                 width: isMobileScreen ? 30 : 5,
