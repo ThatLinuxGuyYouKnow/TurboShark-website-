@@ -13,7 +13,7 @@ class PricingSection extends StatelessWidget {
       color: const Color.fromARGB(255, 182, 219, 248).withOpacity(0.1),
       child: Padding(
         padding: EdgeInsets.symmetric(
-          vertical: 100,
+          vertical: 80,
           horizontal: screenWidth > 900 ? 80 : 20,
         ),
         child: Column(
@@ -55,7 +55,6 @@ class PricingSection extends StatelessWidget {
           'High-Speed Downloads',
         ],
         accentColor: Colors.blue,
-        isRecommended: false,
       ),
       SizedBox(width: screenWidth > 900 ? 30 : 0),
       _buildPricingSection(
@@ -68,7 +67,6 @@ class PricingSection extends StatelessWidget {
           'Advanced Features',
         ],
         accentColor: Colors.blue,
-        isRecommended: true,
       ),
       SizedBox(width: screenWidth > 900 ? 30 : 0),
       _buildPricingSection(
@@ -81,7 +79,6 @@ class PricingSection extends StatelessWidget {
           "Seriously, it's open source"
         ],
         accentColor: Colors.blue,
-        isRecommended: false,
       ),
     ];
   }
@@ -91,19 +88,18 @@ class PricingSection extends StatelessWidget {
     required String price,
     required List<String> benefits,
     required Color accentColor,
-    required bool isRecommended,
   }) {
     return Expanded(
       child: Container(
-        height: 500,
-        width: 100,
+        height: 480,
+        width: 200,
         margin: const EdgeInsets.symmetric(vertical: 10),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(20),
           border: Border.all(
-            color: isRecommended ? accentColor : Colors.grey.shade300,
-            width: isRecommended ? 2 : 1,
+            color: accentColor,
+            width: 1,
           ),
           boxShadow: [
             BoxShadow(
@@ -179,7 +175,7 @@ class PricingSection extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: isRecommended ? accentColor : Colors.grey,
+                  backgroundColor: accentColor,
                   padding:
                       const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                   shape: RoundedRectangleBorder(
