@@ -136,7 +136,7 @@ class MobileScreenAppBar extends StatelessWidget
                 style: GoogleFonts.russoOne(
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
-                  fontSize: 25,
+                  fontSize: isSmallScreen ? 22 : 25,
                   height: 60,
                 ),
               ),
