@@ -50,6 +50,7 @@ class Homepage extends StatelessWidget {
           ),
           Text(
             'Frequently Asked Questions',
+            textAlign: TextAlign.center,
             style: GoogleFonts.ubuntu(
                 fontSize: isSmallScreen ? 30 : 40,
                 fontWeight: isSmallScreen ? FontWeight.w800 : FontWeight.bold,

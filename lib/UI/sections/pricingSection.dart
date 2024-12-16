@@ -96,8 +96,8 @@ class PricingSection extends StatelessWidget {
   }) {
     return Expanded(
       child: Container(
-        height: smallScreenHeight ? 520 : 480,
-        width: isSmallScreen ? 400 : 200,
+        height: 480,
+        width: isSmallScreen ? 350 : 200,
         margin: const EdgeInsets.symmetric(vertical: 10),
         decoration: BoxDecoration(
           color: Colors.white,
@@ -120,6 +120,9 @@ class PricingSection extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              SizedBox(
+                height: 40,
+              ),
               Text(
                 headerText,
                 style: GoogleFonts.ubuntu(

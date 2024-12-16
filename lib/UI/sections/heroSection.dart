@@ -6,7 +6,8 @@ class HeroSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
-
+    bool smallScreen = screenWidth < 600;
+    final bool smallscreenHeight = MediaQuery.of(context).size.height < 900;
     return Container(
       height: 600,
       width: screenWidth,
@@ -16,8 +17,8 @@ class HeroSection extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const SizedBox(
-            height: 160,
+          SizedBox(
+            height: smallscreenHeight ? 80 : 160,
           ),
           Text(
             'Turbo Shark',
@@ -31,8 +32,9 @@ class HeroSection extends StatelessWidget {
           const SizedBox(height: 10),
           Text(
             'Download FASTER than ever!',
+            textAlign: TextAlign.center,
             style: GoogleFonts.ubuntu(
-              fontSize: 28,
+              fontSize: smallScreen ? 24 : 28,
               letterSpacing: 1.5,
               color: Colors.white,
               fontWeight: FontWeight.bold,
@@ -44,7 +46,7 @@ class HeroSection extends StatelessWidget {
             child: Text(
               'Swim circles around slow downloads. The fastest download experience*, completely free.',
               style: GoogleFonts.ubuntu(
-                fontSize: 22,
+                fontSize: smallScreen ? 20 : 22,
                 letterSpacing: 0,
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
