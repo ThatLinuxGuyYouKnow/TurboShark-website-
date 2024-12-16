@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:turbo_shark_website/UI/sections/featureSection.dart';
 import 'package:turbo_shark_website/UI/sections/heroSection.dart';
+import 'package:turbo_shark_website/UI/sections/pricingSection.dart';
 import 'package:turbo_shark_website/UI/widgets/appBars.dart';
 
 class Homepage extends StatelessWidget {
@@ -27,11 +28,7 @@ class Homepage extends StatelessWidget {
           SizedBox(
             height: 100,
           ),
-          Text(
-            'Prcing Plans',
-            style: GoogleFonts.ubuntu(
-                fontSize: 40, fontWeight: FontWeight.bold, color: Colors.blue),
-          )
+          PricingSection()
         ]),
       ),
     );
