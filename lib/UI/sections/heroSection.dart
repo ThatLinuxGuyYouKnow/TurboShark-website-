@@ -20,6 +20,7 @@ class HeroSection extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(height: smallScreenHeight ? 60 : 120),
             Text(
