@@ -7,10 +7,10 @@ class HeroSection extends StatelessWidget {
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
     final bool smallScreen = screenWidth < 600;
-    final bool smallScreenHeight = MediaQuery.of(context).size.height < 900;
+    final bool smallScreenHeight = MediaQuery.sizeOf(context).height < 900;
 
     return Container(
-      height: smallScreen ? 200 : 600,
+      height: smallScreenHeight ? 200 : 600,
       width: screenWidth,
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -23,13 +23,13 @@ class HeroSection extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SizedBox(
-              height: smallScreenHeight ? 60 : 20,
+              height: smallScreenHeight ? 80 : 20,
             ),
             Text(
               'Turbo Shark',
               style: GoogleFonts.russoOne(
                 color: Colors.white,
-                fontSize: smallScreen ? 28 : 40,
+                fontSize: smallScreen ? 24 : 40,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 3,
               ),
