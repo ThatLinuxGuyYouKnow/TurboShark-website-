@@ -11,7 +11,7 @@ class HeroSection extends StatelessWidget {
     print('Screen Width: $screenWidth'); //print statement for debugging.
     print('Screen Height: $screenHeight'); //print statement for debugging.
     final bool smallScreen = screenWidth < 600;
-    final bool smallScreenHeight = screenHeight < 1000;
+    final bool smallScreenHeight = screenHeight < 900;
 
     return Container(
       height: smallScreenHeight ? 200 : 600,
