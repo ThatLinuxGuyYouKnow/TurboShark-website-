@@ -14,7 +14,7 @@ class HeroSection extends StatelessWidget {
     final bool smallScreenHeight = screenHeight < 900;
 
     return Container(
-      height: smallScreenHeight ? 200 : 600,
+      height: smallScreenHeight ? 400 : 600,
       width: screenWidth,
       decoration: BoxDecoration(
         gradient: LinearGradient(
