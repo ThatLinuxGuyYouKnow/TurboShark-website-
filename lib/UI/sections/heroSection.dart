@@ -6,8 +6,12 @@ class HeroSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double screenWidth = MediaQuery.of(context).size.width;
+    final double screenHeight =
+        MediaQuery.sizeOf(context).height; // Capture the height
+    print('Screen Width: $screenWidth'); //print statement for debugging.
+    print('Screen Height: $screenHeight'); //print statement for debugging.
     final bool smallScreen = screenWidth < 600;
-    final bool smallScreenHeight = MediaQuery.sizeOf(context).height < 900;
+    final bool smallScreenHeight = screenHeight < 1000;
 
     return Container(
       height: smallScreenHeight ? 200 : 600,
